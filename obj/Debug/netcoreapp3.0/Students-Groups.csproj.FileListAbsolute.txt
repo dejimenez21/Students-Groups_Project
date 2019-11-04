@@ -1,0 +1,11 @@
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\bin\Debug\netcoreapp3.0\Students-Groups.exe
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\bin\Debug\netcoreapp3.0\Students-Groups.deps.json
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\bin\Debug\netcoreapp3.0\Students-Groups.runtimeconfig.json
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\bin\Debug\netcoreapp3.0\Students-Groups.runtimeconfig.dev.json
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\bin\Debug\netcoreapp3.0\Students-Groups.dll
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\bin\Debug\netcoreapp3.0\Students-Groups.pdb
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\obj\Debug\netcoreapp3.0\Students-Groups.csprojAssemblyReference.cache
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\obj\Debug\netcoreapp3.0\Students-Groups.AssemblyInfoInputs.cache
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\obj\Debug\netcoreapp3.0\Students-Groups.AssemblyInfo.cs
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\obj\Debug\netcoreapp3.0\Students-Groups.dll
+C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\obj\Debug\netcoreapp3.0\Students-Groups.pdb
