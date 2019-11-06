@@ -1,0 +1,46 @@
+1.  Spark
+2.  Game frameworks
+3.  Coding standard
+4.  Object Oriented Programming
+5.  Workspace Design (for software development)
+6.  GPU usage
+7.  Class-responsibility-collaboration card (CRC Cards)
+8.  Visual Management
+9.  Collective code ownership
+10. XP (eXtreme Programming)
+11. CSS frameworks
+12. Preprocessors
+13. GraphQL
+14. Server-less
+15. Kanban (development)
+16. Whole team
+17. REST
+18. Scrum
+19. Lean soft. Dev. principles (Eliminate waste, Amplify learning, ...)
+20. Blockchain
+21. Agile
+22. Quantum computing
+23. Artificial intelligence
+24. Small releases
+25. Release planning
+26. Static website generators
+27. Virtual reality
+28. Functional Programming
+29. Continuous Integration (CI)
+30. Remote Work
+31. Continuous delivery
+32. GitHub
+33. Big data
+34. Pair Programming
+35. Continuous Learning
+36. Test Driven Development (TDD)
+37. IoT
+38. Planning game
+39. Sustainable pace
+40. NIS Directive
+41. Cloud IDEs
+42. Code Review
+43. Cybersecurity
+44. Mob Programming
+45. JavaScript MV frameworks
+46. SVG on Canvas
