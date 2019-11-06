@@ -11,6 +11,7 @@ namespace Students_Groups
         {
             List<string> estudiantes = new List<string>();
             List<Group> grupos = new List<Group>();
+            List<string> temas = new List<string>();
 
             try
             {
@@ -59,8 +60,25 @@ namespace Students_Groups
                 return;
             }
             
+            try
+            {
+                temas = LeerArchivosTemas();
+            }
+            catch(FileNotFoundException e)
+            {
+                System.Console.WriteLine($"Error: El archivo {e.FileName} no existe.");
+                Console.ReadKey();
+                return;
+            }
+            catch(Exception vacio)
+            {
+                System.Console.WriteLine($"Error: {vacio.Message}");
+            }
+
             grupos=RepartirEstudiantesExacto(grupos, estudiantes);
+            temas = RepartirTemasExacto(grupos, temas);
             MostrarResultado(grupos);
+            MostrarResultadoTemas(temas, grupos);
             
             Console.ReadKey();
         }
@@ -116,11 +134,25 @@ namespace Students_Groups
             }
             
         }
+
+        static void MostrarResultadoTemas(List<string> temas, List<Group> grupos)
+        {
+            foreach(var grupo in grupos)
+            {
+                Console.WriteLine($"{grupo.Name}:");
+                foreach(var tema in temas)
+                {
+                    System.Console.WriteLine(tema);
+                }
+                System.Console.WriteLine("");
+            }
+            
+        }
         static List<Group> RepartirEstudiantesExacto(List<Group> grupos, List<string> estudiantes)
         {
             int cociente=estudiantes.Count/grupos.Count;
             int max = cociente+1;
-            int mod=estudiantes.Count%grupos.Count;
+            int mod = estudiantes.Count%grupos.Count;
             foreach(var estudiante in estudiantes)
             {
                 bool dec=false;
@@ -144,6 +176,35 @@ namespace Students_Groups
             }
 
             return grupos;
+        }
+
+        static List<string> RepartirTemasExacto(List<Group> grupos, List<string> temas)
+        {
+            int cociente = temas.Count/grupos.Count;
+            int max = cociente+1;
+            int mod = temas.Count%grupos.Count;
+            foreach(var tema in temas)
+            {
+                bool dec=false;
+                while(!dec)
+                {
+                    int index = DameOtro(temas.Count);
+
+                    if(temas.Count < cociente) 
+                    {
+                        temas.Add(tema);
+                        dec=true;
+                    }
+                    else if(((temas.Count < max) && (mod!=0)))
+                    {
+                        temas.Add(tema);
+                        dec=true;
+                        mod--;
+                    }
+                }
+            }
+
+            return temas;
         }
 
         static int DameOtro(int cantG)
@@ -187,6 +248,25 @@ namespace Students_Groups
             }
 
             return estudiantes;
+        }
+
+        static List<string> LeerArchivosTemas()
+        {
+            List<string> temas = new List<string>();
+            using(StreamReader reader = new StreamReader("temas.txt"))
+            {
+                while(reader.Peek()>-1)
+                {
+                    temas.Add(reader.ReadLine());
+                }
+            }
+
+            if(temas.Count==0)
+            {
+                throw new Exception("El archivo de estudiantes esta vacio");
+            }
+
+            return temas;
         }
         
     }

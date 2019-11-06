@@ -9,3 +9,14 @@ C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\obj\Debug\net
 C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\obj\Debug\netcoreapp3.0\Students-Groups.AssemblyInfo.cs
 C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\obj\Debug\netcoreapp3.0\Students-Groups.dll
 C:\Users\dejim\OneDrive\Documents\INTEC\Tendencias\Students-Groups\obj\Debug\netcoreapp3.0\Students-Groups.pdb
+c:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\bin\Debug\netcoreapp3.0\Students-Groups.exe
+C:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\bin\Debug\netcoreapp3.0\Students-Groups.deps.json
+C:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\bin\Debug\netcoreapp3.0\Students-Groups.runtimeconfig.json
+C:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\bin\Debug\netcoreapp3.0\Students-Groups.runtimeconfig.dev.json
+c:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\bin\Debug\netcoreapp3.0\Students-Groups.dll
+c:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\bin\Debug\netcoreapp3.0\Students-Groups.pdb
+c:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\obj\Debug\netcoreapp3.0\Students-Groups.csprojAssemblyReference.cache
+c:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\obj\Debug\netcoreapp3.0\Students-Groups.AssemblyInfoInputs.cache
+c:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\obj\Debug\netcoreapp3.0\Students-Groups.AssemblyInfo.cs
+c:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\obj\Debug\netcoreapp3.0\Students-Groups.dll
+c:\Users\Elvis G Batista\Documents\GitHub\Students-Groups_Project\obj\Debug\netcoreapp3.0\Students-Groups.pdb

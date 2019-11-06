@@ -8,27 +8,24 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dejim\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\Elvis G Batista\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dejim\\OneDrive\\Documents\\INTEC\\Tendencias\\Students-Groups\\Students-Groups.csproj",
+      "projectUniqueName": "C:\\Users\\Elvis G Batista\\Documents\\GitHub\\Students-Groups_Project\\Students-Groups.csproj",
       "projectName": "Students-Groups",
-      "projectPath": "C:\\Users\\dejim\\OneDrive\\Documents\\INTEC\\Tendencias\\Students-Groups\\Students-Groups.csproj",
-      "packagesPath": "C:\\Users\\dejim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dejim\\OneDrive\\Documents\\INTEC\\Tendencias\\Students-Groups\\obj\\",
+      "projectPath": "C:\\Users\\Elvis G Batista\\Documents\\GitHub\\Students-Groups_Project\\Students-Groups.csproj",
+      "packagesPath": "C:\\Users\\Elvis G Batista\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Elvis G Batista\\Documents\\GitHub\\Students-Groups_Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dejim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Elvis G Batista\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
