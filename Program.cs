@@ -75,14 +75,55 @@ namespace Students_Groups
                 System.Console.WriteLine($"Error: {vacio.Message}");
             }
 
-            grupos=RepartirEstudiantesExacto(grupos, estudiantes);
-            temas = RepartirTemasExacto(grupos, temas);
+            grupos=RepartirEstudiantes(grupos, estudiantes);
+            grupos = RepartirTemas(grupos, temas);
+
             MostrarResultado(grupos);
-            MostrarResultadoTemas(temas, grupos);
             
-            Console.ReadKey();
         }
 
+        static void MostrarResultado(List<Group> grupos)
+        {
+            int op = 0;
+            bool salir = false;
+
+            while(!salir)
+            {
+                System.Console.WriteLine("Elija una opcion:\n");
+                System.Console.WriteLine("1- Ver distribucion de Estudiantes");
+                System.Console.WriteLine("2- Ver distribucion de Temas");
+                System.Console.WriteLine("3- Salir");
+
+                if(!int.TryParse(Console.ReadLine(), out op))
+                {
+                    op = 0;
+                    
+                }
+
+                switch(op)
+                {
+                    case 1:
+                        MostrarEstudiantes(grupos);
+                        break;
+                    
+                    case 2:
+                        MostrarTemas(grupos);
+                        break;
+                    
+                    case 3:
+                        salir = true;
+                        break;
+
+                    default:
+                        System.Console.WriteLine("\nPor favor introduzca una opcion valida");
+                        break;
+                }
+
+                Console.ReadKey();
+                Console.Clear();
+            }
+            
+        }
         static bool ValidarRepeticiones(List<Group> grupos, List<string> estudiantes, out string Message)
         {
             bool repeticion = false;
@@ -121,7 +162,7 @@ namespace Students_Groups
             return repeticion;
         }
 
-        static void MostrarResultado(List<Group> grupos)
+        static void MostrarEstudiantes(List<Group> grupos)
         {
             foreach(var grupo in grupos)
             {
@@ -135,12 +176,12 @@ namespace Students_Groups
             
         }
 
-        static void MostrarResultadoTemas(List<string> temas, List<Group> grupos)
+        static void MostrarTemas(List<Group> grupos)
         {
             foreach(var grupo in grupos)
             {
                 Console.WriteLine($"{grupo.Name}:");
-                foreach(var tema in temas)
+                foreach(var tema in grupo.temas)
                 {
                     System.Console.WriteLine(tema);
                 }
@@ -148,7 +189,7 @@ namespace Students_Groups
             }
             
         }
-        static List<Group> RepartirEstudiantesExacto(List<Group> grupos, List<string> estudiantes)
+        static List<Group> RepartirEstudiantes(List<Group> grupos, List<string> estudiantes)
         {
             int cociente=estudiantes.Count/grupos.Count;
             int max = cociente+1;
@@ -178,33 +219,33 @@ namespace Students_Groups
             return grupos;
         }
 
-        static List<string> RepartirTemasExacto(List<Group> grupos, List<string> temas)
+        static List<Group> RepartirTemas(List<Group> grupos, List<string> temas)
         {
-            int cociente = temas.Count/grupos.Count;
+            int cociente=temas.Count/grupos.Count;
             int max = cociente+1;
             int mod = temas.Count%grupos.Count;
-            foreach(var tema in temas)
+            foreach(var estudiante in temas)
             {
                 bool dec=false;
                 while(!dec)
                 {
-                    int index = DameOtro(temas.Count);
+                    int index = DameOtro(grupos.Count);
 
-                    if(temas.Count < cociente) 
+                    if(grupos[index].temas.Count < cociente) 
                     {
-                        temas.Add(tema);
+                        grupos[index].temas.Add(estudiante);
                         dec=true;
                     }
-                    else if(((temas.Count < max) && (mod!=0)))
+                    else if(((grupos[index].temas.Count < max) && (mod!=0)))
                     {
-                        temas.Add(tema);
+                        grupos[index].temas.Add(estudiante);
                         dec=true;
                         mod--;
                     }
                 }
             }
 
-            return temas;
+            return grupos;
         }
 
         static int DameOtro(int cantG)

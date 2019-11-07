@@ -7,6 +7,7 @@ namespace Students_Groups
     {
         public string Name;
         public List<string> estudiantes = new List<string>();
+        public List<string> temas = new List<string>();
 
         public Group(string name)
         {
